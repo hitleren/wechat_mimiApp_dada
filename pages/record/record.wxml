@@ -1,0 +1,102 @@
+<!--pages/demo2/demo2.wxml-->
+<view class="container">
+  <view class="box">
+  <view class="name">
+    <view class="t1">名字</view>
+    <view class="peoplename" wx:for="{{people}}" wx:key="index">
+        <text class="p">{{item}}:</text>          
+    </view>
+  </view>
+
+  <view class="statistics">
+    <view class="t2">第{{mynum}}局</view>
+    <form bindsubmit="record" class="form">
+        <view class="box1">
+          <view class="peopledata" wx:for="{{people}}" wx:key="index">            
+            <input name="{{index}}" data-id="index" bindinput="myinput" auto-focus/>
+          </view>
+        </view>
+        <view class="mybutton">
+          <button form-type="reset" style="background-color:#D5D5D5;margin-right: 20rpx;" >重置</button>
+          <button type="primary" form-type="submit" style="margin-left: 20rpx;">记录</button>
+        </view>    
+        
+      </form>
+  </view>
+
+  <view class="con">
+    <view class="t3">结果</view>
+    <view class="box2">
+        <view class="result" wx:for="{{result}}" wx:key="index">{{item}}</view>
+    </view>
+  </view>
+</view>
+
+<view class="process">记录数据↓</view>
+
+<view class="mybox">
+  <view class="n">
+    <view class="peoplename2" wx:for="{{people}}" wx:key="index">
+        <text class="p2">{{item}}:</text>          
+    </view>
+  </view>
+
+  <view class="area">
+    <scroll-view scroll-y="true">
+      <view class="textarea">
+        <view class="ta" wx:for="{{numlist[0]}}" wx:key="index">{{item}}+</view>
+      </view>      
+    </scroll-view> 
+    <scroll-view scroll-y="true">
+      <view class="textarea">
+        <view class="ta" wx:for="{{numlist[1]}}" wx:key="index">{{item}}+</view>
+      </view>      
+    </scroll-view> 
+    <scroll-view scroll-y="true">
+      <view class="textarea">
+        <view class="ta" wx:for="{{numlist[2]}}" wx:key="index">{{item}}+</view>
+      </view>      
+    </scroll-view> 
+    <scroll-view scroll-y="true">
+      <view class="textarea">
+        <view class="ta" wx:for="{{numlist[3]}}" wx:key="index">{{item}}+</view>
+      </view>      
+    </scroll-view> 
+  </view>  
+</view>
+
+<view class="cal">计算↓</view>
+
+<view class="box3">  
+  <form bindsubmit="calculate">
+    <view class="cform">
+      请输入金额单位：
+    <input placeholder="多少钱一局" name="money"/> 元
+    <button type="primary" form-type="submit" size="mini" plain="true">计算</button>
+    </view>   
+  </form>
+   
+    <view class="name2">
+      <view class="name2Item" wx:for="{{people}}" wx:key="index">
+          <text class="p2">{{item}}</text>          
+      </view>
+    </view>
+    <view class="money">
+      <view wx:for="{{calculateResult}}" class="moneyItem">{{item}}</view>
+    </view>  
+</view>
+
+<view>
+  <button bindtap="again" type="primary" class="again">再来一局</button>
+</view>
+</view>
+
+
+
+
+
+
+
+
+
+

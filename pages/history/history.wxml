@@ -1,0 +1,67 @@
+<!--pages/history/history.wxml-->
+<view class="container">
+  <view class="bigbox">
+    <view wx:for="{{allnum}}" wx:key="index" class="boxItem">
+      <view class="num">
+        第{{item}}局
+      </view>      
+      <view class="name">
+        <text class="nameItem">名字:</text>
+        <view wx:for="{{everyName[index]}}" class="nameItem">{{item}}</view>
+      </view>
+
+      <view class="box" wx:if="{{everyResult[index].length>0}}">
+        <text class="item">牌数：</text>
+        <view wx:for="{{everyResult[index]}}" class="item">{{item}}</view> 
+      </view>
+      <view wx:else class="box">
+        <text class="item">牌数：</text>
+        <view  wx:for="{{4}}" class="item"></view>
+      </view>  
+      
+       <view class="box" wx:if="{{everyCalculateResult[index].length>0}}">
+          <text class="item">金额：</text>
+          <view wx:for="{{everyCalculateResult[index]}}" class="item">{{item}}</view>
+       </view>
+       <view wx:else class="box">
+          <text class="item">金额：</text>
+          <view  wx:for="{{4}}" class="item"></view>
+       </view>  
+
+       <view class="button">
+        <button size="mini" bindtap="enter" data-num="{{item}}" type="primary">进入此局</button>
+        <button size="mini" bindtap="delete" data-num="{{item}}" type="warn">删除此局</button>
+       </view>       
+    </view>
+    
+  </view>
+  
+  <view class="bigbox">
+    <form bindsubmit="allCalculate" >
+      <view class="allCalculate">
+        <input placeholder="输入金额单位" name="unitMoney"/>元
+        <button type="primary" plain="true" form-type="submit" style="margin-right:0rpx;">一键计算</button>
+      </view>      
+    </form>
+
+    <view class="box" wx:if="{{allsum.length>0}}">
+        <text class="item">总牌数：</text>
+        <view wx:for="{{allsum}}" class="item">{{item}}</view> 
+    </view>
+    <view wx:else class="box">
+      <text class="item">总牌数：</text>
+      <view  wx:for="{{4}}" class="item"></view>
+    </view> 
+         
+    <view  wx:if="{{allCalculateMoney.length>0}}" class="box">
+      <text class="item">总金额：</text>
+      <view wx:for="{{allCalculateMoney}}" class="item">{{item}}</view>          
+    </view>
+    <view wx:else class="box">
+      <text class="item">总金额：</text>
+      <view  wx:for="{{4}}" class="item"></view>
+    </view>        
+    
+  </view>
+  <button type="warn" bindtap="clearHistory" class="clear">清除所有记录</button>
+</view>

@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="box">
+    <form bindsubmit="mysubmit">
+      <view class="m">
+        请输入金额:
+        <input name="money" placeholder="打多少钱一局"/>
+        <text>元</text>
+      </view>          
+      <input name="one" type="number"/>
+      <input name="two" type="number"/>
+      <input name="three" type="number"/>
+      <input name="four" type="number"/>
+      <button form-type="reset">重置</button>
+      <button type="primary" form-type="submit">计算</button>
+    </form>
+  </view> 
+  
+</view>
+
+<view class="title">计算结果</view> 
+<input wx:for="{{result}}" value="{{item}}" name="one"/>
+
+  
+

@@ -1,0 +1,21 @@
+/* pages/history/history.wxss */
+
+.bigbox{background-color: white;border-radius: 20rpx;padding: 10rpx;margin: 20rpx 0;}
+
+.boxItem{border-bottom: 1px dotted gray;}
+
+.num{text-align: center;font-size: 35rpx;color: hotpink;}
+.name{display: flex;width: 100%;justify-content: space-between;color: lightskyblue;font-size: 30rpx;}
+.nameItem{text-align: center;width: 20%; }
+
+.box{display: flex;width: 100%;justify-content: space-between;}
+.item{text-align: center;width: 20%;border: 1px solid;}
+.button{text-align: center;margin-top: 10rpx;}
+.button button{margin: 0 40rpx;}
+
+.calculateBox{margin: 30rpx 0;}
+.allCalculate{display: flex;flex-wrap: wrap;align-items: center;margin:30rpx 0;}
+.allCalculate input{border:1px solid black;height: 50rpx;width: 200rpx;margin: 0 10rpx;margin-left: 0px;}
+.judge{display: flex;width: 100%;justify-content: space-between;}
+
+.clear{margin: 50rpx;}

@@ -1,0 +1,39 @@
+<!--pages/demo/demo.wxml-->
+<view class="container">
+  <view class="title">请输入各位的名字</view> 
+  <form bindsubmit="people">
+    <view class="name">
+      <view class="item">
+        <image src="/images/people.png" mode="aspectFit"></image>
+        <input name="people1" auto-focus/>
+      </view>
+      <view class="item">
+        <image src="/images/people.png" mode="aspectFit"></image>
+        <input name="people2" auto-focus/>
+      </view>
+      <view class="item">
+        <image src="/images/people.png" mode="aspectFit"></image>
+        <input name="people3" auto-focus/>
+      </view>
+      <view class="item">
+        <image src="/images/people.png" mode="aspectFit"></image>
+        <input name="people4" auto-focus/>
+      </view> 
+      <view class="ren">
+        <text>第</text>
+        <input type="number" placeholder="请输入数字" name="mynum" data-num=""/>
+        <text>局</text>
+      </view>
+      <view class="button">
+        <button form-type="reset" style="background-color:#D5D5D5;margin-right:20rpx;">重置</button>
+        <button form-type="submit" type="primary"style="margin-left: 20rpx;">提交</button>  
+      </view>      
+    </view>
+    
+    
+      
+  </form>
+  <view class="history">
+    <button type="primary" plain="true" bindtap="history">历史记录</button>
+  </view> 
+</view>

@@ -1,0 +1,7 @@
+/* pages/contact/contact.wxss */
+.box{background-color: white;border-radius: 20rpx;width:90%;height: 60%;
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%,-50%);}
+.info{margin:30rpx;border: 1px solid;font-size: 40rpx;}

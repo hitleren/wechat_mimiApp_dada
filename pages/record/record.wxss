@@ -1,0 +1,40 @@
+/* pages/demo2/demo2.wxss */
+
+.box{display: flex;width: 100%;background-color: white;border-radius: 20rpx;box-sizing: border-box;padding: 10rpx 0;}
+
+.name{flex-direction: column;width: 20%;}
+.t1{width: 100%;text-align: center;height: 50rpx;line-height: 50rpx;}
+.peoplename{width: 100%;text-align: center;margin: 20rpx 0rpx;height: 50rpx;line-height: 50rpx;font-size: 35rpx;}
+
+.statistics{flex-direction: column;width: 58%;}
+.t2{width: 98%;text-align: center;color: hotpink;font-weight:bold;font-size: 35rpx;height: 50rpx;}
+.peopledata input{border: 1px solid black; height: 50rpx;border-radius: 10rpx;}
+.peopledata{margin: 20rpx 10rpx;}
+.mybutton{display: flex;}
+button{margin: 10rpx 20rpx;}
+
+.con{flex-direction: column; width: 20%;}
+.t3{width: 100%;text-align: center;height: 50rpx;line-height: 50rpx;}
+.result{width: 100%;text-align: center;margin: 20rpx 0;height: 50rpx;line-height: 50rpx;border:1px solid;border-radius: 10rpx;}
+
+.process{width: 100%;margin: 10rpx;text-align: center;color: white;}
+
+.mybox{width: 100%;display: flex;background-color: white;border-radius: 20rpx;padding: 10rpx 0;}
+.n{width: 20%;flex-direction: column;}
+.peoplename2{width: 100%;height: 120rpx;text-align: center;margin: 5px 0;font-size: 35rpx;}
+.area{flex-direction: column;width: 75%;}
+scroll-view{height: 120rpx;width: 100%;margin: 5px 0;border: 1px solid black;border-radius: 10rpx;}
+.textarea{width: 100%;display: flex;flex-wrap: wrap;}
+.ta{height:15px ;font-size: 13px;}
+
+.cal{width: 100%;margin: 10rpx;text-align: center;color: white;}
+
+.box3{background-color: white;border-radius: 20rpx;padding: 10rpx;}
+.cform{display: flex;justify-content: space-between;align-items: center;}
+.cform input{width: 35%;border: 1px solid black;height: 50rpx;}
+.name2{display: flex;width: 100%;}
+.name2Item{width: 25%;text-align: center;color: lightskyblue;border: 1px solid black;}
+.money{display: flex;width: 100%;}
+.moneyItem{width: 25%;text-align: center;border: 1px solid;}
+
+.again{margin-top: 50rpx;}

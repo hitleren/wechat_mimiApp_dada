@@ -1,0 +1,17 @@
+<!--pages/contact/contact.wxml-->
+<view class="container">
+  <view class="box">
+    <view class="info">
+      <view>开发者：hitleren</view>
+      <view>版本号：</view>
+      <view>github地址</view>
+      <view>联系邮箱</view>
+    </view>
+    <button open-type="contact" style="background-color:#9F95FF;color:white;margin-top:250rpx;">联系我</button>     
+  </view> 
+  
+</view>
+
+
+
+

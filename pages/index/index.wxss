@@ -1,0 +1,15 @@
+/* pages/demo/demo.wxss */
+.title{text-align: center;margin: 50rpx 50rpx;font-size: 50rpx;color: white;}
+
+.name{border: 1px solid;background-color: white;border-radius: 20rpx;}
+.item{display: flex;height: 70rpx;width: 400rpx;border: 1px solid red;border: 1px solid black;margin: 20rpx auto;border-radius: 15rpx;}
+.item image{height: 60rpx;width: 100rpx;}
+.item input{height: 100%;}
+
+
+.ren{display: flex; text-align: flex-end;height: 70rpx;line-height: 50rpx;align-items: center;width: 400rpx;margin: 0rpx auto;}
+.ren input{margin:0rpx 20rpx;width: 300rpx;height: 70rpx;border: 1px solid black;border-radius: 15rpx;}
+.button{display: flex;width: 400rpx;margin: 20rpx auto;}
+
+.history{margin: 100rpx;}
+
